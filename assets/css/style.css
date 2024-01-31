@@ -129,6 +129,16 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+.bg-danger {
+  background-color: #d9534f;
+}
+.bg-success {
+  background-color: #5cb85c;
+}
+
+.bg-warning{
+  background-color: #f0ad4e;
+}
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
@@ -393,13 +403,7 @@ section {
 /*--------------------------------------------------------------
 # Akills
 --------------------------------------------------------------*/
-.skills .progress {
-  height: 50px;
-  display: block;
-  background: none;
-}
-
-.skills .progress .skill {
+.skills .skill {
   padding: 0;
   margin: 0 0 6px 0;
   text-transform: uppercase;
@@ -407,22 +411,28 @@ section {
   font-weight: 600;
   font-family: "Poppins", sans-serif;
   color: #050d18;
+  font-size: 14px;
 }
 
-.skills .progress .skill .val {
+.progress-bar{
+  font-weight: 600;
+}
+
+.skills  .skill .val {
   float: right;
   font-style: normal;
 }
 
-.skills .progress-bar-wrap {
-  background: #dce8f8;
+.skills .progress-bar {
+  transition: .9s;
 }
 
-.skills .progress-bar {
-  width: 1px;
-  height: 10px;
-  transition: .9s;
-  background-color: #149ddd;
+.progress{
+  opacity: 0.85;
+}
+
+.progress-bar-wrap {
+  padding-bottom: 15px;
 }
 
 /*--------------------------------------------------------------
